@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leading page</title>
+<style>
+  .corpoBody{
+    background-color: black;
+  }
+
+  /* imagem da etec */
+  .fotoEtec{
+    margin-left: auto;
+    display: block;
+    width: 60%;
+    height: 500px;
+  }
+  
+  /* div da etec foto */
+  .divfotoEtec{
+    background-color: #f41e24;
+    border-bottom: 2px solid white;
+    box-shadow: 0 0 10px white;
+  }
+
+  /* imagem etec logo */
+  .ETECimg{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    left: 4%;
+    top: 10%;
+  }
+
+  /* fundo vermelho inicial */
+  .divExplicacaoTEC{
+    background-color: #f41e24;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 3%;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    
+  }
+
+  /* texto bem vindos a etec */
+  .Bemvindos{
+    position: absolute; 
+    left: 10%; 
+    top: 80%; 
+    color: white;
+    text-shadow:  0 0 5px #fff,       
+    0 0 10px #fff,
+    0 0 20px #00B8D4, 
+    0 0 30px #00B8D4,  
+    0 0 40px #00B8D4;
+  }
+
+  /* caixa da informação do curso disponiveis */
+  .CursoEtec{
+    width: 30%;
+    height: 21%;
+    background-color: green;
+    position: absolute;
+    top: 93%;
+    right: 3%;
+    border-radius: 7px;
+    box-shadow: 0 0 30px 5px green;
+    border: 2px solid darkgreen;
+  }
+
+  /* texto com informação dos cursos disponiveis */
+  .inforcaCurso{
+    background-color: white;
+    width: 100%;
+    height: 20%;
+  }
+
+  /* texto curso disponiveis */
+  .cursosDisponiveis{
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 82%;
+    text-shadow: 0 0 5px white,
+    0 0 10px #fff,
+    0 0 20px rgb(0, 182, 0),
+    0 0 30px rgb(0, 182, 0),
+    0 0 40px rgb(0, 182, 0);
+  }
+
+  /* texto descritivo abaixo do bem vindos */
+  .textoTec{
+    color: white; 
+    width: 60%; 
+    height: 10%;
+    position: absolute;
+    top: 90%;
+    left: 3%;
+    text-align: left;
+    text-shadow: 0 0 5px cyan,
+    0 0 2px cyan;
+  }
+
+  /* parte branca do site */
+  .foterSite{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 130%;
+
+  }
+
+  /* texto da inscrição */
+  .inscricaoProvaTxt{
+    text-align: right;
+    position: absolute;
+    right: 16%;
+    top: 50px;
+  }
+
+  /* formulario de inscrição */
+  .formInscricao{
+    position: absolute;
+    top: 150px;
+    right: 45%;
+  }
+
+  /* parte inteira do formulario de inscrição */
+  .divInscricao{
+    width: 35%;
+    height: 90%;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    border: 2px solid black;
+    border-width: 100%;
+    
+  }
+
+  /* footer do final do site */
+  .footerFinal{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 230%;
+  }
+
+  #sobreRolagem{
+    scroll-margin-top: 250px;
+  }
+
+</style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body class="corpoBody">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">InscriTEC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#sobreRolagem">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#inscricaoRolagem">Datas Provas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#inscricaoRolagem">Inscrição</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <nav>
+    <div class="divfotoEtec">
+
+      <img src="imagens/cpsPaulaSouzaLogoVerdePng-removebg-preview.png" alt="" class="ETECimg">
+      <img src="imagens/fundoEtecPredio.png" alt="" class="fotoEtec">
+
+    </div>
+  </nav>
+
+  <h1 class="Bemvindos"  id="sobreRolagem" >BEM VINDOS a nova &TEC</h1>
+  <h5 class="textoTec">O InscriTec é o ponto de partida para quem quer conquistar uma vaga na ETEC. <br><br>
+    Ele funciona como um portal simples e direto, onde os candidatos podem se inscrever <br>
+    para realizar a prova de entrada, sem complicação e sem perder tempo.
+    A ideia do site é
+    transformar um processo que muitas vezes parece confuso em algo rápido e organizado.
+    Com poucos passos, o usuário preenche seus dados, escolhe as opções necessárias e já garante
+    sua participação no exame. Tudo pensado para ser intuitivo, mesmo para quem não tem muita
+    experiência com tecnologia.
+    Além disso, o InscriTec busca transmitir segurança e clareza, mostrando
+    ao candidato que ele está no caminho certo para dar um passo importante na sua vida acadêmica.
+    Afinal, entrar em uma ETEC não é só passar em uma prova — é abrir portas para o futuro.
+  </h5>
+
+  <h3 class="cursosDisponiveis">CURSOS DISPONIVEIS</h3>
+  <div class="CursoEtec">
+    <div class="inforcaCursos" id="infoCursosDISPO">
+      <h6 style="color: white;"> 
+           - desenvolvimento de sistemas - : curso para aprender sobre programação<br>
+           - informatica da computação - : curso para aprender tudo sobre computação e informatica<br>
+           - farmacia - : curso para aprendizagem de medicamentos e medicina<br>
+           - administração - : curso para o aprendizado sobre a adiministrar o dinheiro
+      </h6>
+    </div>
+  </div>
+
+  <div class="foterSite" id="inscricaoRolagem">
+    <div class="divInscricao" >
+    <h2 class="inscricaoProvaTxt">INSCRIÇÃO PARA PROVA</h2>
+
+    <form action="comprovante.php" method="post" class="formInscricao" id="cadastrarFORM">
+
+      <label for="">Nome Completo: </label><br>
+      <input type="text" oninput="this.value = this.value.replace(/[0-9]/, '');" name="nomeComplet"  style="width: 170%;"><br><br>
+      
+      <label for="">Idade: </label><br>
+      <input type="number" name="idadeUser" style="width: 170%;" min="18" max="67"><br><br>
+
+      <label for="">Email: </label><br>
+      <input type="email" name="emailUser" style="width: 170%;" placeholder="abc@gmail.com // abc@outlook.com"><br><br>
+
+      <label for="">CPF:</label><br>
+      <input type="text" style="width: 170%;" maxlength="14" name="cpfUser" placeholder="000.000.000-00"><br><br>
+
+      <label for="">Curso:</label><br>
+      <input list="lista-de-opcoes" name="opcoesCurso" placeholder="Escolha um Curso" style="width: 170%;">
+
+      <datalist id="lista-de-opcoes">
+        <option value="desenvolvimento de sistemas">
+        <option value="informatica da computação">
+        <option value="farmacia">
+        <option value="administração">
+      </datalist><br><br>
+
+      <label for="">ETEC:</label><br>
+      <input list="lista-de-opcoes-etec" name="opcoesEtec" placeholder="Escolha uma etec" style="width: 170%;">
+
+      <datalist id="lista-de-opcoes-etec">
+        <option value="etec de santos">
+        <option value="etec de itanhaém">
+        <option value="etec de são paulo">
+        <option value="etec de maranhão">
+      </datalist><br><br>
+
+
+      <input type="submit" value="Enviar" style="position: absolute; left: 32%; width: 100%;">
+    </form>
+    </div>
+
+    <h1 style="position: absolute; left: 10%; top: 5%;">Requisitos para se Inscrever</h1>
+    <h5 style="position: absolute; top: 15%; left: 5%;">
+      - Tem que ter mais de 18 anos para fazer o curso da etec -<br><br>
+      - Deve ter concluído o fundamental e o fundamental II -<br><br>
+      - Deve conter uma foto 3x4 recente com fundo neutro para apresentar na etec - <br><br>
+      - Deve mostrar documentação na etec escolhida para confirmar a inscrição -
+    </h5>
+
+    <h2 style="position: absolute; top: 45%; left: 10%;">------DATAS PARA PROVA------</h2>
+    <h4 style="position: absolute; top: 50%; left: 21%;">2° semestre</h4>
+    <h5 style="position: absolute; top: 57%; left: 12%;">
+      - De 15/04 até 22/04/2026 -<br><br>
+      - De 15/04 até as 15h do dia 25/05/2026 -<br><br>
+      - 28/04/2026, a partir das 15h -<br><br>
+      - De 28/04, a partir das 15h até as 15h do dia 25/05/2026 -<br> <br>
+      - De 29/04 até 30/04/2026 - <br><br>
+      - 06/05/2026, a partir das 15h - <br><br>
+    </h5>
+  </div>
+
+
+  <footer class="footerFinal">
+    <h6 style="position: absolute; top: 30%; left: 50%; transform: translateX(-50%); color: white;">site feito por um programação muito aurudo, um dos melhores city boys do DS
+      não tem comparação a ele
+    </h6>
+    <h6 style="position: absolute; top: 60%; left: 50%; transform: translateX(-50%); color: white;">Marco o maior 67 da sala!</h6>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
