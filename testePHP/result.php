@@ -1,14 +1,26 @@
 <?php
+    session_start();
+
+    $EmailCerto = "Marco@gmail.com";
+    $SenhaCerta = "147569";
 
 
-session_start();
+    if(isset($_POST['EmailCadas'], $_POST['SenhaCadas']) && 
+        $_POST['EmailCadas'] == $EmailCerto && 
+        $_POST['SenhaCadas'] == $SenhaCerta){
 
-if(isset($_SESSION['login']) && isset($_SESSION['senha'])){
-    echo "acesso liberado";
-}
-else {
-    echo "acesso negado";
-}
+        $_SESSION['Email'] = true;
+        $_SESSION['Senha'] = true;
 
+        echo "acesso liberado";
+    }
+    else{
+        $_SESSION['Email'] = false;
+        $_SESSION['Senha'] = false;
+
+        echo "acesso negado";
+    }
+    
 
 ?>
+
