@@ -1,6 +1,6 @@
 <?php
 
-include('inc/conexcao.php');
+include('inc/conexao.php');
 
 $sql = "SELECT * FROM aluno";
 
