@@ -164,27 +164,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label>Senha:</label>
             <input type="password" name="senhaUsuarioBuscar" class="form-control" placeholder="12345678" required>
 
-            <div class="mb-3">
-                <label class="form-label text-white">Banco / Conta:</label>
-                <select name="idBanco" class="form-control" required>
-                    <option value="">Selecione o banco...</option>
-                    <?php
-                    if (isset($idUsuarioLogado)) {
-                        try {
-                            $stmtBancos = $pdo->prepare("SELECT cd_banco, nm_banco FROM tb_bancos WHERE id_usuario = ?");
-                            $stmtBancos->execute([$idUsuarioLogado]);
-                            $bancos = $stmtBancos->fetchAll();
-
-                            foreach ($bancos as $banco) {
-                                echo '<option value="' . $banco['cd_banco'] . '">' . htmlspecialchars($banco['nm_banco']) . '</option>';
-                            }
-                        } catch (PDOException $e) {
-                            echo '<option value="">Erro ao carregar bancos</option>';
-                        }
-                    }
-                    ?>
-                </select>
-            </div>
 
             <input type="submit" value="Entrar" class="botaoEnviar form-control">
         </form>
